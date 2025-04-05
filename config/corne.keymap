@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-
     behaviors {
         HML: HML {
             compatible = "zmk,behavior-hold-tap";
@@ -58,10 +57,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q    &kp W  &kp E     &kp R    &kp T            &kp Y      &kp U      &kp I            &kp O    &kp P        &none
-&none  &kp A    &kp S  &kp D     &kp F    &kp G            &kp H      &kp J      &kp K            &kp L    &kp SEMI     &none
-&none  &lt 1 Z  &kp X  &kp C     &kp V    &kp B            &kp N      &kp M      &kp COMMA        &kp DOT  &lt 2 SLASH  &none
-                       &kp LGUI  &kp TAB  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp LC(LA(DEL))
+&none  &kp Q              &kp W  &kp E     &kp R    &kp T            &kp Y      &kp U      &kp I            &kp O    &kp P                       &none
+&none  &HML LEFT_SHIFT A  &kp S  &kp D     &kp F    &kp G            &kp H      &kp J      &kp K            &kp L    &HMR RIGHT_SHIFT SEMICOLON  &none
+&none  &lt 1 Z            &kp X  &kp C     &kp V    &kp B            &kp N      &kp M      &kp COMMA        &kp DOT  &lt 2 SLASH                 &none
+                                 &kp LGUI  &kp TAB  &kp BACKSPACE    &kp SPACE  &kp ENTER  &kp LC(LA(DEL))
             >;
         };
 
